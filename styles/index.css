@@ -43,7 +43,7 @@
 .about .about_wrap .about_left {
     width: max-content; height: max-content;
     position: sticky; top: 0;
-    margin-right: 130px; 
+    margin-right: 145px; 
 }
 .about .about_wrap .about_left .profile_img {
     margin-bottom: 60px; position: relative; padding: 35px 0 80px 70px;}
