@@ -178,6 +178,19 @@
     display: inline-block; font-weight: 500; padding-left: 15px;
 }
 .web_design .web_works .web_work .work_thumbnail {width: 930px; margin: 0 30px;}
+/* view 짝대기 애니메이션 */
+.web_design .web_works .web_work:hover .work_link p span {
+    background-color: #111;
+    transform: scaleY(0);
+    animation: line_ani 0.5s linear forwards;
+}
+@keyframes line_ani {
+    0% {transform-origin: top;}
+    100% {
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+}
 .web_design .web_works .web_work .work_thumbnail img {}
 .web_design .web_works .web_work .work_link {
     width: calc(100% - (300px + 930px));
@@ -217,7 +230,7 @@
 .web_design .web_works .web_work .work_link ul li:hover .link_arrow {
     opacity: 0;
     filter:invert(100%);
-    animation: arrow_ani 0.3s linear forwards 0.4s;
+    animation: arrow_ani 0.3s linear forwards 0.3s;
 }
 @keyframes link_ani {
     100% {background-size:100%}
