@@ -140,20 +140,22 @@
 .skills .contents .skills_group .skills_row .skill .name {font-size: 1.13rem; font-weight: 500; margin-right: 15px;}
 .skills .contents .skills_group .skills_row .skill .des {}
 /* =======================================================================<3 web design> */
-.web_design {padding: 100px 180px;}
+.web_design {padding: 100px 0;}
 /* ===========================================3,4행 디자인 공통 제목 */
 .web_design .title, .skills .title,
 .other_design .title {
+    padding: 0 180px;
     font-family: 'Playfair Display', serif;
     font-size : 2.8rem; font-style: italic;
     margin-bottom: 80px;
 }
 .web_design .web_works {border-top: 1px solid #111;}
-.web_design .web_works .web_work {
+.web_design .web_works .web_work {}
+.web_design .web_works .web_work .work_wrap {
     width: 100%;
     display: flex; flex-flow: row nowrap;
     border-bottom: 1px solid #111;
-    padding: 65px 0;
+    padding: 65px 180px;
 }
 .web_design .web_works .web_work .work_header {
     width: 300px;
@@ -179,8 +181,8 @@
 }
 .web_design .web_works .web_work .work_thumbnail {width: 930px; margin: 0 30px;}
 /* view 짝대기 애니메이션 */
+.web_design .web_works .web_work .work_link p span {background-color: #111;}
 .web_design .web_works .web_work:hover .work_link p span {
-    background-color: #111;
     transform: scaleY(0);
     animation: line_ani 0.5s linear forwards;
 }
@@ -239,6 +241,20 @@
     100% {transform: translateX(0); opacity: 1;}
 }
 /* E : 웹디자인 링크 hover 애니메이션 테스트 */
+/* web_work 부분 색상 반전 */
+/* .web_design .web_works .hyundai {background-color: #111;}
+.web_design .web_works .hyundai * {color: #fff;}
+.web_design .web_works .hyundai .work_link p span {background-color: #fff;}
+.web_design .web_works .hyundai .work_link ul {border-color: #fff;}
+.web_design .web_works .hyundai .work_link ul li {border-color: #fff;}
+.web_design .web_works .hyundai .work_link ul li:hover {
+    background: linear-gradient(#fff 0 0) 0/0% no-repeat;
+    animation: link_ani 0.5s linear forwards;
+}
+.web_design .web_works .hyundai .work_link ul li:hover a {color: #111;}
+.web_design .web_works .hyundai .work_link ul li:hover .link_arrow {
+    filter:invert(0%);
+} */
 /* =======================================================================<4 others design> */
 .other_design {padding: 100px 0;}
 .other_design .title {text-align: center; margin-bottom: 80px;}
@@ -261,19 +277,33 @@
 .other_design .bnr_slide_wrap .bnr_swiper .swiper-wrapper .swiper-slide {}
 .other_design .bnr_slide_wrap .bnr_swiper .swiper-wrapper .swiper-slide img {width: 100%; cursor: pointer;}
 .other_design .sns_slide_wrap {
+    position: relative;
     display: flex; flex-flow: row nowrap; align-items: center;
-    margin-right: 155px;
+    margin-right: 155px; margin-bottom: 100px;
 }
 .other_design .sns_slide_wrap .sns_swiper {width: 100%; height: 380px;}
 .other_design .sns_slide_wrap .sns_swiper .swiper-wrapper {transition-timing-function: linear;}
 .other_design .sns_slide_wrap .sns_swiper .swiper-wrapper .swiper-slide {}
 .other_design .sns_slide_wrap .sns_swiper .swiper-wrapper .swiper-slide img {width: 100%; height: 100%; cursor: pointer;}
 .other_design .sns_slide_wrap .folder_img {
-    width: 320px; position: absolute; right: 0; bottom: -30px;
+    width: 320px; position: absolute; right: -155px; bottom: -30px;
     transform: scaleX(-1);
 }
 .other_design .sns_slide_wrap .folder_f {z-index: 100;}
 .other_design .sns_slide_wrap .folder_img img {width: 100%;}
+.other_design .detail_slide_wrap {
+    display: flex; flex-flow: row nowrap; align-items: center;
+    margin-left: 155px;
+}
+.other_design .detail_slide_wrap .detail_swiper {width: 100%; height: 665px;}
+.other_design .detail_slide_wrap .detail_swiper .swiper-wrapper {transition-timing-function: linear;}
+.other_design .detail_slide_wrap .detail_swiper .swiper-wrapper .swiper-slide {}
+.other_design .detail_slide_wrap .detail_swiper .swiper-wrapper .swiper-slide img {width: 100%; cursor: pointer;}
+.other_design .detail_slide_wrap .folder_img {
+    width: 320px; position: absolute; left: 0; bottom: -30px;
+}
+.other_design .detail_slide_wrap .folder_f {z-index: 100;}
+.other_design .detail_slide_wrap .folder_img img {width: 100%;}
 /* 팝업 부분 */
 .other_design .img_popup_bg {
     position: fixed; left: 0; top: 0; z-index: 999;
