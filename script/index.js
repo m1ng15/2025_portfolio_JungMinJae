@@ -24,7 +24,8 @@ for(let i of bnrImg){
         img_popup_bg.style.display = 'block';
         console.log(i.src)
         img_popup_bg.children[0].children[0].src = i.src;
-        img_popup_bg.children[0].style.width = i.src;
+        img_popup_bg.children[0].style.width = '900px';
+        img_popup_bg.children[0].style.marginTop = '250px';
     })
 }
 for(let i of snsImg){
@@ -32,7 +33,8 @@ for(let i of snsImg){
         img_popup_bg.style.display = 'block';
         console.log(i.src)
         img_popup_bg.children[0].children[0].src = i.src;
-        img_popup_bg.children[0].style.width = i.src;
+        img_popup_bg.children[0].style.width = '700px';
+        img_popup_bg.children[0].style.marginTop = '150px';
     })
 }
 img_popup_bg.addEventListener('click',()=>{
