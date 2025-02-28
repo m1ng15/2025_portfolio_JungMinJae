@@ -203,9 +203,7 @@
     display: block; width: 2px; height: 128px; background-color: #111;
     margin: 7px 5px;
 }
-.web_design .web_works .web_work .work_link ul {
-    border-top: 1px solid #111;
-}
+.web_design .web_works .web_work .work_link ul {}
 
 .web_design .web_works .web_work .work_link ul li {
     display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
