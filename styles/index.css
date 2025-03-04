@@ -46,13 +46,18 @@
     margin-right: 145px; 
 }
 .about .about_wrap .about_left .profile_img {
-    margin-bottom: 60px; position: relative; padding: 35px 0 80px 70px;}
+    margin-bottom: 60px; position: relative; padding: 35px 0 80px 70px;
+}
+.about .about_wrap .about_left .profile_img .person_img {
+    width: 380px; position: relative; z-index: 100;
+    animation: profile_animation 1s forwards 2s;
+    margin-bottom: -30px; margin-left: 5px;
+}
+.about .about_wrap .about_left .profile_img .person_img img {width: 100%;}
 .about .about_wrap .about_left .profile_img .folder_img {width: 290px; position: absolute; left: 0; bottom: -3px;}
 .about .about_wrap .about_left .profile_img .folder_img img {width: 100%;}
 .about .about_wrap .about_left .profile_img .folder_b {}
 .about .about_wrap .about_left .profile_img .folder_f {z-index: 300;}
-.about .about_wrap .about_left .profile_img .person_img {width: 325px; height: 412px; background-color: gray; position: relative; z-index: 100; animation: profile_animation 1s forwards 2s;}
-.about .about_wrap .about_left .profile_img .profile_img img {width: 100%;}
 @keyframes profile_animation {
     0% {transform: rotate(0);}
     100% {transform: rotate(15deg);}
@@ -211,7 +216,7 @@
     border-bottom: 1px solid #111;
 }
 .web_design .web_works .web_work .work_link ul li a {font-size: 1.69rem; line-height: 36px;}
-/* S : 웹디자인 링크 hover 애니메이션 테스트 */
+/* S : 웹디자인 링크 hover 애니메이션 */
 .web_design .web_works .web_work .work_link ul li:hover {
     background: linear-gradient(#111 0 0) 0/0% no-repeat;
     animation: link_ani 0.5s linear forwards;
@@ -225,7 +230,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    transform: translateX(-15px);
+    transform: translateX(-18px);
 }
 .web_design .web_works .web_work .work_link ul li:hover .link_arrow {
     opacity: 0;
@@ -236,7 +241,7 @@
     100% {background-size:100%}
 }
 @keyframes arrow_ani {
-    100% {transform: translateX(0); opacity: 1;}
+    100% {transform: translateX(-10px); opacity: 1;}
 }
 /* E : 웹디자인 링크 hover 애니메이션 테스트 */
 /* web_work 부분 색상 반전 */
