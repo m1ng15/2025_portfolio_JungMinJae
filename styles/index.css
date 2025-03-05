@@ -111,6 +111,8 @@
 }
 .about .about_wrap .about_right .profile_details ul li .school {}
 .about .about_wrap .about_right .profile_details .education {}
+.about .about_wrap .about_right .profile_details .certifi {}
+.about .about_wrap .about_right .profile_details .certifi li .certifi_name {}
 .about .about_wrap .about_right .profile_details .study_abroad {}
 .about .about_wrap .about_right .profile_details .my_skills {margin-bottom: 0;}
 .about .about_wrap .about_right .profile_details .my_skills .title {}
