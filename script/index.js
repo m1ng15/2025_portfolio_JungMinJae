@@ -62,6 +62,6 @@ img_popup_bg.addEventListener('click',()=>{
 const personImg = document.querySelector('.about .person_img')
 window.addEventListener('scroll',()=>{
     if ( window.scrollY >= 300) {
-        personImg.style.animation = 'profile_animation 1s forwards 2s';
+        personImg.style.animation = 'profile_animation 1s forwards';
     }
 })
