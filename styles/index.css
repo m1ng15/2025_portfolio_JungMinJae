@@ -1,3 +1,4 @@
+body > * {width: 1920px;} /* 반응형 웹 제작 시, 삭제 */
 /* =======================================================================<0 start> */
 .start {background-color: #f4f4f4; padding: 145px;}
 .start .start_wrap {width: max-content; margin: 0 auto;}
