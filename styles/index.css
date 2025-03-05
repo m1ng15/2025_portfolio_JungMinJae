@@ -50,7 +50,6 @@
 }
 .about .about_wrap .about_left .profile_img .person_img {
     width: 380px; position: relative; z-index: 100;
-    animation: profile_animation 1s forwards 2s;
     margin-bottom: -30px; margin-left: 5px;
 }
 .about .about_wrap .about_left .profile_img .person_img img {width: 100%;}

@@ -57,3 +57,11 @@ for(let i of detailImg){
 img_popup_bg.addEventListener('click',()=>{
     img_popup_bg.style.display = 'none'
 })
+
+/* 프로필 사진 애니메이션 - 스크롤 적용 */
+const personImg = document.querySelector('.about .person_img')
+window.addEventListener('scroll',()=>{
+    if ( window.scrollY >= 300) {
+        personImg.style.animation = 'profile_animation 1s forwards 2s';
+    }
+})
