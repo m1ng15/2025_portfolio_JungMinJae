@@ -211,28 +211,32 @@
 .web_design .web_works .web_work .work_link ul {}
 
 .web_design .web_works .web_work .work_link ul li {
+    position: relative;
     display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
     padding: 10px 0 10px 3px;
     border-bottom: 1px solid #111;
 }
-.web_design .web_works .web_work .work_link ul li a {font-size: 1.69rem; line-height: 36px;}
+.web_design .web_works .web_work .work_link ul li a {
+    position: relative;
+    display: inline-block; width: 100%; font-size: 1.69rem; line-height: 36px;
+}
 /* S : 웹디자인 링크 hover 애니메이션 */
 .web_design .web_works .web_work .work_link ul li:hover {
     background: linear-gradient(#111 0 0) 0/0% no-repeat;
     animation: link_ani 0.5s linear forwards;
 }
 .web_design .web_works .web_work .work_link ul li:hover a {color: #fff;}
-.web_design .web_works .web_work .work_link ul li .link_arrow {
-    font-size: 1.69rem; line-height: 36px;
-    display: inline-block;
+.web_design .web_works .web_work .work_link ul li a::before {
+    position: absolute; top: 50%; right: 0;
+    transform: translateY(-50%) translateX(-18px);
+    content: ''; display: inline-block;
     width: 32px; height: 32px;
     background-image: url(../images/link_btn.png);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    transform: translateX(-18px);
+    font-size: 1.69rem; line-height: 36px;
 }
-.web_design .web_works .web_work .work_link ul li:hover .link_arrow {
+.web_design .web_works .web_work .work_link ul li:hover a::before {
     opacity: 0;
     filter:invert(100%);
     animation: arrow_ani 0.3s linear forwards 0.3s;
@@ -241,7 +245,7 @@
     100% {background-size:100%}
 }
 @keyframes arrow_ani {
-    100% {transform: translateX(-10px); opacity: 1;}
+    100% {transform: translateY(-50%) translateX(-10px); opacity: 1;}
 }
 /* E : 웹디자인 링크 hover 애니메이션 테스트 */
 /* web_work 부분 색상 반전 */
@@ -315,7 +319,7 @@
 }
 .other_design .img_popup_bg .popup_wrap {
     width: 965px; margin: 90px auto 0;
-    height: 100vh; overflow: auto;
+    height: 80vh; overflow: auto;
 }
 .other_design .img_popup_bg .popup_wrap img {width: 100%;}
 /* =======================================================================<5 fianl> */
